@@ -1,0 +1,128 @@
+from sklearn.feature_selection import RFE
+
+features = len(xFeature.columns) + 1
+
+rfe_score_test = []
+rfe_score_train = []
+
+for n in range(1, features):
+    model = LogisticRegression()
+        
+    # Initialize RFE with the desired number of features to select
+    rfe = RFE(model, n_features_to_select=n)
+    rfe.fit(x_train_main, y_train_main)
+
+    rfe_pred_test = rfe.predict(x_test)
+    rfe_pred_train = rfe.predict(x_train_main)
+
+    score_train = f1_score(y_train_main, rfe_pred_train)
+    score_test = f1_score(y_test, rfe_pred_test)
+
+    rfe_score_train.append({f'{n}':float(round(score_train,3))})
+    rfe_score_test.append({f'{n}':float(round(score_test, 3))})
+
+print(rfe_score_train)
+print(rfe_score_test)
+
+
+
+
+
+best_n = 10  # From your observation, the best n is 12
+rfe_best = RFE(LogisticRegression(), n_features_to_select=best_n)
+rfe_best.fit(x_train_main, y_train_main)
+
+# Get the selected feature columns using the support_ attribute
+selected_columns = xFeature.columns[rfe_best.support_]
+selected_columns
+
+
+Feature_copy = xFeature[selected_columns]
+
+x_train_main, x_test, x_val, y_train_main, y_val, y_test = split_data(xFeature_copy, yTarget_cls.copy())
+# scale data
+x_train_main, x_test, x_val = scale_data(x_train_main, x_test, x_val)
+
+# train a model
+baseline_model_RFE = train_baseline_model(x_train_main, y_train_main, x_val, y_val)
+baseline_model_RFE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+from sklearn.metrics import confusion_matrix, precision_score, recall_score,roc_auc_score
+
+models = {
+    'LogisticRegression': LogisticRegression(C = 0.1, max_iter = 100, penalty = 'l1', random_state = 11, solver = 'saga'),
+    'Decision Tree Classifier': DecisionTreeClassifier(random_state = random_state, criterion = 'entropy', max_depth = 10, min_samples_split = 10),
+    'K-Nearest Neighbors': KNeighborsClassifier(metric = 'minkowski', n_neighbors = 23, p = 1, weights = 'distance'),
+    'Random Forest': RandomForestClassifier(n_estimators=200, random_state=57),
+    'XGBoost': XGBClassifier(learning_rate = 0.2, max_depth = 3, n_estimators = 200),
+    'SVC': SVC(C = 1, gamma = 1, kernel = 'rbf')
+}
+
+
+train_results = []
+test_results = []
+
+for name, model in models.items():
+    model.fit(x_train_main, y_train_main)  
+
+    train_pred = model.predict(x_train_main)
+    test_pred = model.predict(x_test)
+    
+    confusion_train = confusion_matrix(y_train_main, train_pred)
+    accuracy_train = round(accuracy_score(y_train_main, train_pred) * 100, 2)
+    precision_train = round(precision_score(y_train_main, train_pred) * 100, 2)
+    recall_train = round(recall_score(y_train_main, train_pred) * 100, 2)
+    f1_train = round(f1_score(y_train_main, train_pred) * 100, 2)
+    roc_train = round(roc_auc_score(y_train_main, train_pred) * 100, 2)
+
+    confusion_test = confusion_matrix(y_test, test_pred)
+    accuracy_test = round(accuracy_score(y_test, test_pred) * 100, 2)
+    precision_test = round(precision_score(y_test, test_pred) * 100, 2)
+    recall_test = round(recall_score(y_test, test_pred) * 100, 2)
+    f1_test = round(f1_score(y_test, test_pred) * 100, 2)
+    roc_test = round(roc_auc_score(y_test, test_pred) * 100, 2)
+
+    train_results.append({
+        'Model': name,
+        'Confusion': confusion_train,
+        'Accuracy Score': f"{accuracy_train}%",
+        'Precision': f"{precision_train}%",
+        'Recall': f"{recall_train}%",
+        'F1 Score': f"{f1_train}%",
+        'ROC-AUC': f"{roc_train}%",
+        'Predictions': train_pred
+    })
+
+    test_results.append({
+        'Model': name,
+        'Confusion': confusion_test,
+        'Accuracy Score': f"{accuracy_test}%",
+        'Precision': f"{precision_test}%",
+        'Recall': f"{recall_test}%",
+        'F1 Score': f"{f1_test}%",
+        'ROC-AUC': f"{roc_test}%",
+        'Predictions': test_pred
+    })
