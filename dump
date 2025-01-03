@@ -126,3 +126,27 @@ for name, model in models.items():
         'ROC-AUC': f"{roc_test}%",
         'Predictions': test_pred
     })
+
+
+
+selector = SelectKBest(mutual_info_classif, k = max_index)
+selector.fit(x_train_main, y_train_main)
+
+selected_features_mask = selector.get_support()
+selected_features = xFeature.columns[selected_features_mask]
+
+selected_features
+
+
+
+Feature_copy = xFeature[selected_features]
+
+# prepare data for training
+x_train_main, x_test, x_val, y_train_main, y_val, y_test = preprocess_data(xFeature_copy, yTarget_cls)
+
+# training a baseline model
+kbest_model = train_baseline_model(x_train_main, y_train_main, x_val, y_val)
+kbest_model
+
+
+
