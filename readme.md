@@ -5,7 +5,14 @@ This project (coursework) focuses on applying various machine learning (ML) mode
 The primary objectives of this coursework include performing Clustering Analysis (Unsupervised Learning) to group developers based on similar compensation patterns, Classification (Supervised Learning) to categorize developers into high and low-income groups, and Regression Analysis (Supervised Learning) to predict their annual compensation. 
 
 ## Tools
-![Python programming](images/skills/python.png) ![Pandas](images/skills/pandas.png) 
+## Tools
+
+<p align="center">
+  <img src="images/skills/python.png" width="150" height="150">
+  <img src="images/skills/pandas.png" width="150" height="150">
+  <img src="images/skills/seaborn.png" width="150" height="150">
+</p>
+
 - seaborn
 - matplotlib
 - SKlearn
