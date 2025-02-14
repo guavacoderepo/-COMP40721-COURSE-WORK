@@ -23,17 +23,12 @@ The dataset consisting of 113 columns and 65,437 rows, with 13 numerical and 100
 ## Data Preprocessing
 In the initial data preparation phase, the following tasks were performed:
 
-1. Data Loading and Inspection
-    The dataset was loaded and initially inspected for understanding its structure and key features.
+1. **Data Loading and Inspection:** The dataset was loaded and initially inspected for understanding its structure and key features.
 
-2. Handling Duplicate Values
-    Any duplicate rows were identified and removed to ensure the integrity of the data.
+2. **Handling Duplicate Values:** Any duplicate rows were identified and removed to ensure the integrity of the data.
 
-3. Handling Missing or Erroneous Values
-    Missing or erroneous values were addressed using appropriate strategies, such as imputation or removal, depending on the nature of the data.
+3. **Handling Missing or Erroneous Values:** Missing or erroneous values were addressed using appropriate strategies, such as imputation or removal, depending on the nature of the data.
 
-4. Outlier Detection and Handling
-    Outliers were identified and appropriately handled, either by capping or removing them, to prevent distortion in model performance.
+4. **Outlier Detection and Handling:** Outliers were identified and appropriately handled, either by capping or removing them, to prevent distortion in model performance.
 
-5. Data Formatting and Conversion
-    Non-numeric columns were converted into appropriate numeric formats where necessary, ensuring compatibility with machine learning models.
+5. **Data Formatting and Conversion:** Non-numeric columns were converted into appropriate numeric formats where necessary, ensuring compatibility with machine learning models.
