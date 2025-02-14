@@ -1,4 +1,4 @@
-# Machine Learning Analysis of Developer Compensation: Insights from the Stack Overflow 2024 Survey
+# Machine Learning Analysis on Developer Compensation: Stack Overflow 2024
 
 ## Project Description
 
