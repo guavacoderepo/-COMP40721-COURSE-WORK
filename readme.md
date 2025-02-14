@@ -52,14 +52,14 @@ We shall be exploring the dataset in search for answers to the following key que
 After building our supervised (classification and regression) and unsupervised (clustering) models, here are the results of the models on the training set using various metrics and their performance:
 
 - Clustering
-<img src="images/cluster.png" width="300" />
+<img src="images/cluster.png" width="700" />
 
 - Classification
-<img src="images/cls.png" width="300" />
+<img src="images/cls.png" width="700" />
 
-<img src="images/roc.png" width="300" />
+<img src="images/roc.png" width="700" />
 
 - Regression
-<img src="images/reg.png" width="300" />
+<img src="images/reg.png" width="700" />
 
-<img src="images/regressionp;lot.png" alt="Prediction vs Actual values plot" width="300" />
+<img src="images/regressionp;lot.png" alt="Prediction vs Actual values plot" width="700" />
