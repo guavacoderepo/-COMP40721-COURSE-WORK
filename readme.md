@@ -63,3 +63,14 @@ After building our supervised (classification and regression) and unsupervised (
 <img src="images/reg.png" width="700" />
 
 <img src="images/regressionp;lot.png" alt="Prediction vs Actual values plot" width="700" />
+
+## Challenges Ecncountered
+Some of the challenges encountered while carrying out this project include:
+
+- **Handling Missing Values:** Properly imputing missing data without introducing bias.
+- **Outliers:** Identifying and managing outliers that could distort model performance.
+- **Feature Engineering:** Creating meaningful features from raw data to improve model accuracy.
+
+
+
+
