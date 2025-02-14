@@ -44,4 +44,22 @@ We shall be exploring the dataset in search for answers to the following key que
 
 - **How does a developer's tech stack influence their salary?**
 
+- **How does a work style influence their salary?**
 
+
+## Results
+
+After building our supervised (classification and regression) and unsupervised (clustering) models, here are the results of the models on the training set using various metrics and their performance:
+
+- Clustering
+![Clustering result](images/cluster.png)
+
+- Classification
+![Classification result](images/cls.png)
+
+![ROC](images/roc.png)
+
+- Regression
+![Regression result](images/reg.png)
+
+![Prediction vs Actual values plot](images/regressionp;lot.png)
