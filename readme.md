@@ -8,11 +8,9 @@ The primary objectives of this coursework include performing Clustering Analysis
 ## Tools
 
 <p align="center">
-  <img src="images/skills/python.png" width="150" height="150">
-  <img src="images/skills/pandas.png" width="150" height="150">
-  <img src="images/skills/seaborn.png" width="150" height="150">
+  <img src="images/skills/python.png" width="100" height="100">
+  <img src="images/skills/pandas.png" width="100" height="100">
+  <img src="images/skills/seaborn.png" width="100" height="100">
+  <img src="images/skills/matplot.png" width="100" height="100">
+  <img src="images/skills/Sklearn.png" width="100" height="100">
 </p>
-
-- seaborn
-- matplotlib
-- SKlearn
