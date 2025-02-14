@@ -1,10 +1,12 @@
-# Predicting and Analyzing Developer Compensation: Insights from the Stack Overflow 2024 Developer Survey
+# Machine Learning Analysis of Developer Compensation: Insights from the Stack Overflow 2024 Survey
 
 ## Project Description
 
 This project (coursework) focuses on applying various machine learning (ML) models to analyze and predict developers' annual compensation. The study leverages data from the "Stack Overflow 2024 Annual Developer Survey", which captures information about the annual salaries of developers from diverse countries, industries, skills, and experience levels. 
 
 The primary objectives of this coursework include performing Clustering Analysis (Unsupervised Learning) to group developers based on similar compensation patterns, Classification (Supervised Learning) to categorize developers into high and low-income groups, and Regression Analysis (Supervised Learning) to predict their annual compensation. 
+
+![Project Header](images/eda.png)
 
 ## Tools Used
 
@@ -53,17 +55,17 @@ We shall be exploring the dataset in search for answers to the following key que
 After building our supervised (classification and regression) and unsupervised (clustering) models, here are the results of the models on the training set using various metrics and their performance:
 
 - Clustering
-<img src="images/cluster.png" width="700" />
+<img src="images/cluster.png" width="1000" />
 
 - Classification
-<img src="images/cls.png" width="700" />
+<img src="images/cls.png" width="1000" />
 
-<img src="images/roc.png" width="700" />
+<img src="images/roc.png" width="1000" />
 
 - Regression
-<img src="images/reg.png" width="700" />
+<img src="images/reg.png" width="1000" />
 
-<img src="images/regressionp;lot.png" alt="Prediction vs Actual values plot" width="700" />
+<img src="images/regressionp;lot.png" width="1000" />
 
 ## Challenges Ecncountered
 Some of the challenges encountered while carrying out this project include:
