@@ -32,3 +32,21 @@ In the initial data preparation phase, the following tasks were performed:
 4. **Outlier Detection and Handling:** Outliers were identified and appropriately handled, either by capping or removing them, to prevent distortion in model performance.
 
 5. **Data Formatting and Conversion:** Non-numeric columns were converted into appropriate numeric formats where necessary, ensuring compatibility with machine learning models.
+
+## Exploratory Data Analysis
+
+We shall be exploring the dataset in search for answers to the following key questions:
+
+- How does gender and age affect developers' salaries?
+We will investigate the impact of gender and age on salary disparities and trends.
+
+- How do region and industry impact salaries?
+We will examine how different regions and industries influence salary levels.
+
+- How do years of experience and years of coding influence developers' salaries?
+We will analyze how experience and coding years correlate with higher salaries.
+
+- How does a developer's tech stack influence their salary?
+We will explore how different tech stacks (e.g., Python, JavaScript) affect salary expectations.
+
+
