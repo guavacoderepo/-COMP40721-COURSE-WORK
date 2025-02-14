@@ -73,7 +73,3 @@ Some of the challenges encountered while carrying out this project include:
 - **Handling Missing Values:** Properly imputing missing data without introducing bias.
 - **Outliers:** Identifying and managing outliers that could distort model performance.
 - **Feature Engineering:** Creating meaningful features from raw data to improve model accuracy.
-
-
-
-
