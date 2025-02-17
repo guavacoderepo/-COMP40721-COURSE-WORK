@@ -2,9 +2,13 @@
 
 ## Project Description
 
-This project (coursework) focuses on applying various machine learning (ML) models to analyze and predict developers' annual compensation. The study leverages data from the "Stack Overflow 2024 Annual Developer Survey", which captures information about the annual salaries of developers from diverse countries, industries, skills, and experience levels. 
+This project (coursework) focuses on applying various machine learning (ML) models to analyze and predict developers' 
+annual compensation. The study leverages data from the "Stack Overflow 2024 Annual Developer Survey", which captures 
+information about the annual salaries of developers from diverse countries, industries, skills, and experience levels. 
 
-The primary objectives of this project include performing Clustering Analysis (Unsupervised Learning) to group developers based on similar compensation patterns, Classification (Supervised Learning) to categorize developers into high and low-income groups, and Regression Analysis (Supervised Learning) to predict their annual compensation. 
+The primary objectives of this project include performing Clustering Analysis (Unsupervised Learning) to group 
+developers based on similar compensation patterns, Classification (Supervised Learning) to categorize developers 
+into high and low-income groups, and Regression Analysis (Supervised Learning) to predict their annual compensation. 
 
 ![Project Header](images/eda.png)
 
@@ -21,7 +25,9 @@ The primary objectives of this project include performing Clustering Analysis (U
 
 ## Data Understanding
 
-The dataset consisting of 113 columns and 65,437 rows, with 13 numerical and 100 categorical columns. 17 columns were selected for analysis, consisting of 16 features and 1 target variable, based on their relevance to developer compensation and domain knowledge.
+The dataset consisting of 113 columns and 65,437 rows, with 13 numerical and 100 categorical columns. 
+17 columns were selected for analysis, consisting of 16 features and 1 target variable, based on their relevance to 
+developer compensation and domain knowledge.
 
 ## Data Preprocessing
 In the initial data preparation phase, the following tasks were performed:
@@ -52,7 +58,9 @@ We shall be exploring the dataset in search for answers to the following key que
 
 ## Results
 
-After building our supervised (classification and regression) and unsupervised (clustering) models, here are the results of the models on the training set using various metrics and their performance:
+After building our supervised (classification and regression) and unsupervised 
+(clustering) models, here are the results of the models on the training set 
+using various metrics and their performance:
 
 - Clustering
 <img src="images/cluster.png" width="1000" />
@@ -67,7 +75,7 @@ After building our supervised (classification and regression) and unsupervised (
 
 <img src="images/regressionp;lot.png" width="1000" />
 
-## Challenges Ecncountered
+## Challenges Encountered
 Some of the challenges encountered while carrying out this project include:
 
 - **Handling Missing Values:** Properly imputing missing data without introducing bias.
